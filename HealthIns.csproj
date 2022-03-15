@@ -1,0 +1,281 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1F88015-5866-4B09-B0BD-2A15B785C6A5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HealthIns</RootNamespace>
+    <AssemblyName>HealthIns</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\flex-slider.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\css\templatemo-softy-pinko.css" />
+    <Content Include="assets\fonts\flexslider-icon.svg" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\slick.svg" />
+    <Content Include="assets\images\banner-bg.png" />
+    <Content Include="assets\images\blog-item-01.png" />
+    <Content Include="assets\images\blog-item-02.png" />
+    <Content Include="assets\images\blog-item-03.png" />
+    <Content Include="assets\images\circle-dec.png" />
+    <Content Include="assets\images\featured-item-01.png" />
+    <Content Include="assets\images\fun-facts-bg.png" />
+    <Content Include="assets\images\left-image.png" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\logo_Health_ins.JPG" />
+    <Content Include="assets\images\right-image.png" />
+    <Content Include="assets\images\testimonial-icon.png" />
+    <Content Include="assets\images\work-process-bg.png" />
+    <Content Include="assets\images\work-process-item-01.png" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\imgfix.min.js" />
+    <Content Include="assets\js\jquery-2.1.0.min.js" />
+    <Content Include="assets\js\jquery.counterup.min.js" />
+    <Content Include="assets\js\popper.js" />
+    <Content Include="assets\js\scrollreveal.min.js" />
+    <Content Include="assets\js\waypoints.min.js" />
+    <Content Include="contact.aspx" />
+    <Content Include="dummy\bbs-logo%402x.png" />
+    <Content Include="dummy\bbs-logo.png" />
+    <Content Include="dummy\featured-image-1%402x.jpg" />
+    <Content Include="dummy\featured-image-1.jpg" />
+    <Content Include="dummy\featured-image-2%402x.jpg" />
+    <Content Include="dummy\featured-image-2.jpg" />
+    <Content Include="dummy\featured-image-3%402x.jpg" />
+    <Content Include="dummy\featured-image-3.jpg" />
+    <Content Include="dummy\forbes-logo%402x.png" />
+    <Content Include="dummy\forbes-logo.png" />
+    <Content Include="dummy\money-logo%402x.png" />
+    <Content Include="dummy\money-logo.png" />
+    <Content Include="dummy\nyt-logo%402x.png" />
+    <Content Include="dummy\nyt-logo.png" />
+    <Content Include="dummy\offer-1%402x.jpg" />
+    <Content Include="dummy\offer-1.jpg" />
+    <Content Include="dummy\offer-2%402x.jpg" />
+    <Content Include="dummy\offer-2.jpg" />
+    <Content Include="dummy\offer-3%402x.jpg" />
+    <Content Include="dummy\offer-3.jpg" />
+    <Content Include="dummy\offer-4%402x.jpg" />
+    <Content Include="dummy\offer-4.jpg" />
+    <Content Include="dummy\offer-tall%402x.jpg" />
+    <Content Include="dummy\offer-tall.jpg" />
+    <Content Include="dummy\offer-wide%402x.jpg" />
+    <Content Include="dummy\offer-wide.jpg" />
+    <Content Include="dummy\slide-1%402x.jpg" />
+    <Content Include="dummy\slide-1.jpg" />
+    <Content Include="dummy\slide-2%402x.jpg" />
+    <Content Include="dummy\slide-2.jpg" />
+    <Content Include="dummy\slide-3%402x.jpg" />
+    <Content Include="dummy\slide-3.jpg" />
+    <Content Include="dummy\team-1%402x.jpg" />
+    <Content Include="dummy\team-1.jpg" />
+    <Content Include="dummy\team-2%402x.jpg" />
+    <Content Include="dummy\team-2.jpg" />
+    <Content Include="dummy\team-3%402x.jpg" />
+    <Content Include="dummy\team-3.jpg" />
+    <Content Include="dummy\team-4%402x.jpg" />
+    <Content Include="dummy\team-4.jpg" />
+    <Content Include="dummy\wsj-logo%402x.png" />
+    <Content Include="dummy\wsj-logo.png" />
+    <Content Include="fonts\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\lineo-icon\demo-files\demo.css" />
+    <Content Include="fonts\lineo-icon\demo-files\demo.js" />
+    <Content Include="fonts\lineo-icon\demo.html" />
+    <Content Include="fonts\lineo-icon\fonts\icomoon.svg" />
+    <Content Include="fonts\lineo-icon\Read Me.txt" />
+    <Content Include="fonts\lineo-icon\style.css" />
+    <Content Include="images\arrow%402x.png" />
+    <Content Include="images\arrow-blue%402x.png" />
+    <Content Include="images\arrow-blue.png" />
+    <Content Include="images\arrow.png" />
+    <Content Include="images\dotted%402x.png" />
+    <Content Include="images\dotted.png" />
+    <Content Include="images\icon-calendar%402x.png" />
+    <Content Include="images\icon-calendar.png" />
+    <Content Include="images\icon-phone%402x.png" />
+    <Content Include="images\icon-phone.png" />
+    <Content Include="images\icon-search%402x.png" />
+    <Content Include="images\icon-search.png" />
+    <Content Include="images\logo%402x.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="index.html" />
+    <Content Include="insurance.html" />
+    <Content Include="js\app.js" />
+    <Content Include="js\ie-support\html5.js" />
+    <Content Include="js\ie-support\pie.htc" />
+    <Content Include="js\ie-support\respond.js" />
+    <Content Include="js\jquery-1.11.1.min.js" />
+    <Content Include="js\min\app-min.js" />
+    <Content Include="js\min\plugins-min.js" />
+    <Content Include="js\plugins.js" />
+    <Content Include="resource.html" />
+    <Content Include="style.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\fonts\Flaticon.woff" />
+    <Content Include="assets\fonts\flexslider-icon.eot" />
+    <Content Include="assets\fonts\flexslider-icon.ttf" />
+    <Content Include="assets\fonts\flexslider-icon.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\slick.eot" />
+    <Content Include="assets\fonts\slick.ttf" />
+    <Content Include="assets\fonts\slick.woff" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\lineo-icon\fonts\icomoon.eot" />
+    <Content Include="fonts\lineo-icon\fonts\icomoon.ttf" />
+    <Content Include="fonts\lineo-icon\fonts\icomoon.woff" />
+    <Content Include="fonts\lineo-icon\selection.json" />
+    <Content Include="js\jquery-1.11.1.min.map" />
+    <None Include="packages.config" />
+    <Content Include="prepros-6.config" />
+    <Content Include="sass\layout\_content.scss" />
+    <Content Include="sass\layout\_footer.scss" />
+    <Content Include="sass\layout\_header.scss" />
+    <Content Include="sass\libs\bootstrap-grid\_grid.scss" />
+    <Content Include="sass\libs\bootstrap-grid\_mixins.scss" />
+    <Content Include="sass\libs\bootstrap-grid\_settings.scss" />
+    <Content Include="sass\libs\_components.scss" />
+    <Content Include="sass\libs\_global.scss" />
+    <Content Include="sass\libs\_mixins.scss" />
+    <Content Include="sass\libs\_normalize.scss" />
+    <Content Include="sass\libs\_settings.scss" />
+    <Content Include="sass\style.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sass\pages\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55361</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55361/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
